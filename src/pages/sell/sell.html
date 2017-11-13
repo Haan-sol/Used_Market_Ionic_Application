@@ -1,0 +1,116 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      sell
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page18">
+  <ion-card id="sell-card23">
+    <ion-list>
+      <div style="width:100%;height:220px;margin:0px 0px;line-height:250px;background-color:#e8ebef;text-align:center;">
+        <i class="icon ion-image" style="font-size:64px;color:#888;vertical-align:middle;"></i>
+      </div>
+      <ion-item color="none" id="sell-list-item25">
+        상품사진
+      </ion-item>
+      <div class="spacer" style="width:300px;height:138px;" id="sell-spacer13"></div>
+      <button id="sell-button19" ion-button color="dark" block>
+        <ion-icon name="add"></ion-icon>
+        사진등록
+      </button>
+    </ion-list>
+  </ion-card>
+  <form id="sell-form9">
+    <ion-item id="sell-select1">
+      <ion-label>
+        카테고리
+      </ion-label>
+      <ion-select name="Category">
+        <ion-option>
+          책
+        </ion-option>
+        <ion-option>
+          전자기기
+        </ion-option>
+        <ion-option>
+          옷
+        </ion-option>
+        <ion-option>
+          가구
+        </ion-option>
+        <ion-option>
+          부동산
+        </ion-option>
+        <ion-option>
+          생활용품
+        </ion-option>
+        <ion-option>
+          스포츠
+        </ion-option>
+        <ion-option>
+          음악
+        </ion-option>
+      </ion-select>
+    </ion-item>
+  </form>
+  <ion-list id="sell-list17">
+    <ion-item id="sell-input17">
+      <ion-label>
+        상품명
+      </ion-label>
+      <ion-input type="text" placeholder="" name="productName"></ion-input>
+    </ion-item>
+    <ion-item id="sell-input18">
+      <ion-label>
+        가격
+      </ion-label>
+      <ion-input type="number" placeholder="                               (원)" name="price"></ion-input>
+    </ion-item>
+    <ion-item color="none" id="sell-list-item47">
+      상태
+    </ion-item>
+    <ion-item name="new" id="sell-checkbox1">
+      <ion-label>
+        새 상품
+      </ion-label>
+      <ion-checkbox></ion-checkbox>
+    </ion-item>
+    <ion-item name="S" id="sell-checkbox2">
+      <ion-label>
+        중고 - S
+      </ion-label>
+      <ion-checkbox></ion-checkbox>
+    </ion-item>
+    <ion-item name="A" id="sell-checkbox3">
+      <ion-label>
+        중고 - A
+      </ion-label>
+      <ion-checkbox></ion-checkbox>
+    </ion-item>
+    <ion-item name="B" id="sell-checkbox4">
+      <ion-label>
+        중고 - B
+      </ion-label>
+      <ion-checkbox></ion-checkbox>
+    </ion-item>
+    <ion-item name="C" id="sell-checkbox5">
+      <ion-label>
+        중고 - C
+      </ion-label>
+      <ion-checkbox></ion-checkbox>
+    </ion-item>
+    <ion-item id="sell-input21">
+      <ion-label stacked>
+        설명
+      </ion-label>
+      <ion-input type="text" placeholder="상품 설명을 자세히 입력해주세요" name="details"></ion-input>
+    </ion-item>
+  </ion-list>
+  <button id="sell-button21" ion-button color="dark" block on-click="goToPage26()">
+    등록
+  </button>
+</ion-content>

@@ -1,14 +1,54 @@
 <ion-header>
   <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
     <ion-title>
-      Ionic Blank
+      home
     </ion-title>
   </ion-navbar>
 </ion-header>
-
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding id="page5">
+  <div class="spacer" style="width:300px;height:30px;" id="home-spacer2"></div>
+  <form id="home-form2">
+    <ion-searchbar placeholder="" name="" id="home-search2"></ion-searchbar>
+  </form>
+  <div style="width:100%;height:220px;margin:0px 0px;line-height:250px;background-color:#e8ebef;text-align:center;">
+    <i class="icon ion-image" style="font-size:64px;color:#888;vertical-align:middle;"></i>
+  </div>
+  <button id="home-button22" ion-button color="light" full small style="font-weight:300;font-size:14px;text-align:justify;" on-click="goToHome_clothes()">
+    entire | books | electronics | clothes | furnitures | rooms | daily_supplies | sports | musics |
+  </button>
+  <div id="home-container1">
+    <div class="spacer" style="width:300px;height:15px;" id="home-spacer3"></div>
+    <button id="home-button1" ion-button color="stable" large on-click="goToGood_info_()">
+      자전거
+    </button>
+    <button id="home-button3" ion-button color="stable" large on-click="goToPage14()">
+      스웨터
+    </button>
+    <button id="home-button4" ion-button color="stable" large>
+      Item
+    </button>
+    <div id="home-container2">
+      <div class="spacer" style="width:300px;height:15px;" id="home-spacer4"></div>
+      <button id="home-button5" ion-button color="stable" large>
+        아이언맨 수트
+      </button>
+      <button id="home-button6" ion-button color="stable" large>
+        Item
+      </button>
+      <div class="spacer" style="width:300px;height:15px;" id="home-spacer1"></div>
+      <button id="home-button9" ion-button color="stable" large>
+        Item
+      </button>
+      <button id="home-button11" ion-button color="stable" large>
+        Item
+      </button>
+      <button id="home-button65" ion-button color="stable" large>
+        Item
+      </button>
+      <div class="spacer" style="width:300px;height:15px;" id="home-spacer5"></div>
+    </div>
+  </div>
 </ion-content>

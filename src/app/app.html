@@ -1,1 +1,78 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="mainContent">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        Menu
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content id="side-menu21">
+    <ion-list id="menu-list14">
+      <ion-item-divider color="light" id="menu-list-item-divider11">
+        카테고리
+      </ion-item-divider>
+      <ion-item color="none" menuClose="" on-click="goToHome()" id="menu-list-item44">
+        전체상품
+      </ion-item>
+      <ion-item color="none" id="menu-list-item28">
+        책
+      </ion-item>
+      <ion-item color="none" id="menu-list-item32">
+        전자기기
+      </ion-item>
+      <ion-item color="none" menuClose="" on-click="goToHome_clothes()" id="menu-list-item36">
+        옷
+      </ion-item>
+      <ion-item color="none" id="menu-list-item38">
+        가구
+      </ion-item>
+      <ion-item color="none" id="menu-list-item34">
+        부동산
+      </ion-item>
+      <ion-item color="none" id="menu-list-item37">
+        생활용품
+      </ion-item>
+      <ion-item color="none" id="menu-list-item35">
+        스포츠
+      </ion-item>
+      <ion-item color="none" id="menu-list-item33">
+        음악
+      </ion-item>
+      <ion-item-divider color="light" id="menu-list-item-divider12">
+        판매
+      </ion-item-divider>
+      <ion-item color="none" menuClose="" on-click="goToSell()" id="menu-list-item46">
+        판매상품등록
+      </ion-item>
+      <ion-item-divider color="light" id="menu-list-item-divider13">
+        나의 상품
+      </ion-item-divider>
+      <ion-item color="none" menuClose="" on-click="goToLike()" id="menu-list-item49">
+        찜목록
+      </ion-item>
+      <ion-item color="none" menuClose="" on-click="goToSale()" id="menu-list-item45">
+        내가 올린 물건
+      </ion-item>
+      <ion-item-divider color="light" id="menu-list-item-divider14">
+        계정 관리
+      </ion-item-divider>
+      <ion-item color="none" menuClose="" on-click="goToAccount_manage()" id="menu-list-item48">
+        회원정보
+      </ion-item>
+      <ion-item-divider color="light" id="menu-list-item-divider15">
+        고객 센터
+      </ion-item-divider>
+      <ion-item color="none" menuClose="" on-click="goToBug_request()" id="menu-list-item51">
+        버그알림
+      </ion-item>
+      <ion-item color="none" menuClose="" on-click="goToBlacklist_report()" id="menu-list-item52">
+        신고하기
+      </ion-item>
+      <ion-item color="none" menuClose="" on-click="goToLogin()" id="menu-list-item50">
+        로그아웃
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav #mainContent [root]="rootPage"></ion-nav>

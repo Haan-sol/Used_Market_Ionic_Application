@@ -1,25 +1,20 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { Home_clothesPage } from '../home_clothes/home_clothes';
 import { Page24Page } from '../page24/page24';
 import { LikePage } from '../like/like';
 import { Good_info_Page } from '../good_info_/good_info_';
 import { Blacklist_reportPage } from '../blacklist_report/blacklist_report';
 import { Page23Page } from '../page23/page23';
-import { Page14Page } from '../page14/page14';
 
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-home_clothes',
+  templateUrl: 'home_clothes.html'
 })
-export class HomePage {
+export class Home_clothesPage {
 
   constructor(public navCtrl: NavController) {
   }
-  goToHome_clothes(params){
-    if (!params) params = {};
-    this.navCtrl.push(Home_clothesPage);
-  }goToPage24(params){
+  goToPage24(params){
     if (!params) params = {};
     this.navCtrl.push(Page24Page);
   }goToLike(params){
@@ -34,8 +29,5 @@ export class HomePage {
   }goToPage23(params){
     if (!params) params = {};
     this.navCtrl.push(Page23Page);
-  }goToPage14(params){
-    if (!params) params = {};
-    this.navCtrl.push(Page14Page);
   }
 }

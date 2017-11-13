@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      mypage
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page4">
+  <ion-list id="mypage-list1">
+    <ion-item-divider color="light" id="mypage-list-item-divider3">
+      나의 상품
+    </ion-item-divider>
+    <ion-item color="none" on-click="goToLike()" id="mypage-list-item9">
+      찜목록
+      <ion-icon name="arrow-dropright" item-right></ion-icon>
+    </ion-item>
+    <ion-item color="none" on-click="goToSale()" id="mypage-list-item16">
+      내가 올린 물건
+      <ion-icon name="arrow-dropright" item-right></ion-icon>
+    </ion-item>
+    <ion-item-divider color="light" id="mypage-list-item-divider4">
+      계정관리
+    </ion-item-divider>
+    <ion-item color="none" on-click="goToAccount_manage()" id="mypage-list-item10">
+      회원정보
+      <ion-icon name="arrow-dropright" item-right></ion-icon>
+    </ion-item>
+    <ion-item-divider color="light" id="mypage-list-item-divider5">
+      고객센터
+    </ion-item-divider>
+    <ion-item color="none" on-click="goToBug_request()" id="mypage-list-item12">
+      버그 알림
+    </ion-item>
+    <ion-item color="none" on-click="goToBlacklist_report()" id="mypage-list-item13">
+      신고하기
+    </ion-item>
+  </ion-list>
+  <button id="mypage-button18" ion-button color="positive" block on-click="goToLogin()">
+    로그아웃
+  </button>
+</ion-content>
