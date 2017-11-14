@@ -4,7 +4,6 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>
-      sell
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -66,43 +65,35 @@
     </ion-item>
     <ion-item id="sell-input18">
       <ion-label>
-        가격
+        가격(원)
       </ion-label>
-      <ion-input type="number" placeholder="                               (원)" name="price"></ion-input>
+      <ion-input type="number" name="price"></ion-input>
     </ion-item>
-    <ion-item color="none" id="sell-list-item47">
-      상태
-    </ion-item>
-    <ion-item name="new" id="sell-checkbox1">
-      <ion-label>
-        새 상품
-      </ion-label>
-      <ion-checkbox></ion-checkbox>
-    </ion-item>
-    <ion-item name="S" id="sell-checkbox2">
-      <ion-label>
-        중고 - S
-      </ion-label>
-      <ion-checkbox></ion-checkbox>
-    </ion-item>
-    <ion-item name="A" id="sell-checkbox3">
-      <ion-label>
-        중고 - A
-      </ion-label>
-      <ion-checkbox></ion-checkbox>
-    </ion-item>
-    <ion-item name="B" id="sell-checkbox4">
-      <ion-label>
-        중고 - B
-      </ion-label>
-      <ion-checkbox></ion-checkbox>
-    </ion-item>
-    <ion-item name="C" id="sell-checkbox5">
-      <ion-label>
-        중고 - C
-      </ion-label>
-      <ion-checkbox></ion-checkbox>
-    </ion-item>
+    <ion-list radio-group [(ngModel)] = "status">
+      <ion-list-header>
+        상태
+      </ion-list-header>
+      <ion-item>
+        <ion-label>새 상품</ion-label>
+        <ion-radio value = "new"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>중고 - S</ion-label>
+        <ion-radio value = "S"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>중고 - A</ion-label>
+        <ion-radio value = "A"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>중고 - B</ion-label>
+        <ion-radio value = "B"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>중고 - C</ion-label>
+        <ion-radio value = "C"></ion-radio>
+      </ion-item>
+    </ion-list>
     <ion-item id="sell-input21">
       <ion-label stacked>
         설명
