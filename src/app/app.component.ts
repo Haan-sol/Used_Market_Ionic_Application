@@ -21,14 +21,35 @@ import { Bug_requestPage } from '../pages/bug_request/bug_request';
 import { SignupPage } from '../pages/signup/signup';
 import { LoginPage } from '../pages/login/login';
 
+import firebase from 'firebase';
+
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
   @ViewChild(Nav) navCtrl: Nav;
-    rootPage:any = LoginPage;
-
+    rootPage:any;
+    
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
+    firebase.initializeApp({
+      apiKey: "AIzaSyAyxxvKkHN1qK1bLzytXHyrRG2oIktADdc",
+      authDomain: "used-market.firebaseapp.com",
+      databaseURL: "https://used-market.firebaseio.com",
+      projectId: "used-market",
+      storageBucket: "",
+      messagingSenderId: "599661042563"
+    });
+
+    const unsubscribe = firebase.auth().onAuthStateChanged( user => {
+      if(!user){
+        this.rootPage = 'LoginPage';
+        unsubscribe();
+      } else {
+        this.rootPage = HomePage;
+        unsubscribe();
+      }
+    });
+    
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
